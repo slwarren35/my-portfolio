@@ -5,22 +5,27 @@
     box-sizing: border-box;
 }
 
+
 header {
     background-color: #03989e;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto;
     position: sticky;
-    top: 0;
+    top: 0px;
+    margin: 0 auto;
     padding: 10px 20px;
+    border-bottom: 5px solid #ff914d;
 }
+
 
 header a {
     text-decoration: none;
     color: #fff;
     font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
@@ -38,10 +43,28 @@ header nav ul {
 }
 
 header nav li {
-    padding-right: 20px; 
+    padding-right: 40px; 
       
    
 }
+
+footer {
+    background-color: #ff914d;;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 0px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+footer h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
 
 
 
