@@ -3,11 +3,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Heading & Navigation Styles*/
 
 header {
     background-color: #03989e;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,22 +24,6 @@ header {
     margin: 0 auto;
     padding: 10px 20px;
     border-bottom: 5px solid #ff914d;
-}
-
-
-header a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-
-
-header h1 {
-    font-family:cursive;
-    
 }
 
 header nav ul {
@@ -47,7 +38,61 @@ header nav li {
       
    
 }
+header li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    
+          
+}
 
+.hero {
+    height: 600px;
+    background-color: purple;
+}
+/*About Me Section */
+.intro {
+        background-color: #ff914d;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        
+        
+    
+}
+.section-title {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding: 20px;
+    border-right: 5px #fff solid;
+    
+
+}
+
+.my-image {
+    flex: 1 1 30%;
+    margin-left: 20px;
+
+}
+
+.info {
+    flex 1 1 60%;
+
+}
+
+#my-work {
+    background-color: #03989e;
+    height: 500px;
+}
+
+#contact-me {
+    height: 500px;
+}
+
+
+/*Footer Styles*/
 footer {
     background-color: #ff914d;;
     display:flex;
