@@ -8,6 +8,7 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 /*Heading & Navigation Styles*/
@@ -29,6 +30,7 @@ header {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -38,10 +40,10 @@ header nav li {
       
    
 }
-header li a {
+header ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.85vw;
     font-weight: 900;
     
           
@@ -52,66 +54,124 @@ header li a {
     background-image: url(../images/hero.png);
     background-size:cover;
     border-bottom: 5px solid #fff;
+    
 
 }
+
+
+/* Section Titles */
+section {
+    width: 100%;   
+    background-color: #03989e;
+    padding:20px;
+}
+
+
+
+
 /*About Me Section */
-.intro {
-        background-color: #03989e;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        
-        
+
+.about-me-container {
+    background-color: #03989e;
+    display: flex; 
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
     
 }
+
+.section-title-container {
+    flex: 1;
+    display: flex;
+    border: 5px #fff solid;
+    
+}
+
 .section-title {
+    color:#fff;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    padding: 20px;
-    border-right: 5px #fff solid;
+    font-size: 28px;
+    flex:1;
+    display: flex;
     
-
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+      
 }
 
 .my-image {
-    flex: 1 1 30%;
-    margin-left: 20px;
-
+    flex-shrink: 0;
+    padding: 20px;
+    
+    
 }
 
-.info {
-    flex: 1 1 60%;
-
+.my-image img {
+    border: orange 5px solid;
+    border-radius: 25%;
+    width: 100%;
+    
+    
 }
+.my-info {
+    flex: 4;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    border: 5px purple solid;
+}
+
+
+
+
+
+/* My Work Styles */
+ 
+
 
 #my-work {
     background-color: #ff914d;
-    height: 500px;
+    
 }
 
+
+
+
+/* Contact Me Section */
 #contact-me {
-    height: 500px;
+    background-color: #03989e;
+    
+}
+.container-contact {
+    display: flex;
 }
 
+/*Footer Styles */
 
-/*Footer Styles*/
 footer {
-    background-color: #ff914d;;
+    background-color: #ff914d;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     top: 0px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 5px 40px;
+    width: 100%;
+    
 }
 
 footer h2 {
     font-size: 20px;
-    text-align: center;
     color: #fff;
+    text-align: center;
 }
+
+
 
 
 
