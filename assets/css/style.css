@@ -8,20 +8,13 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    
     
 }
 
-.section-title-container {
-    flex: 1 10%;
-    border: 5px purple solid;
-    
-
-}
-
-.content-container {
-    flex: 4 80%;
-    border: 5px red solid;
-
+.border-bottom {
+    border-bottom: 5px #fff solid;
 }
 
 /*Heading & Navigation Styles*/
@@ -37,7 +30,7 @@ header {
     top: 0px;
     margin: 0 auto;
     padding: 10px 20px;
-    border-bottom: 5px solid #fff;
+    
 }
 
 header nav ul {
@@ -65,53 +58,64 @@ header ul li a {
 .hero {
     height: 600px;
     background-image: url(../images/hero.png);
-    background-size:cover;
-    border-bottom: 5px solid #fff;
+    background-size:cover;  
     
 
 }
 
-
-/* Section Titles */
+/* Section Styling */
 section {
     width: 100%;   
     background-color: #03989e;
     padding:20px;
-       
+    
+    
 }
 
+.section-title-container {
+    flex: 1 8%;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-/*About Me Section */
-#about-me {
+.content-container {
+    flex: 4 80%;
     display: flex;
-    border: 5px #000 solid;
-    justify-content: space-between;
-}
-
-.about-me-container {
-    background-color: #03989e;
-    display: flex; 
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     
     
 }
-
-
 
 .section-title {
     color:#fff;
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 28px;
-    border: 5px #fff solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    
       
 }
+
+
+
+/*About Me Section */
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about-me-container {
+    background-color: #03989e;
+    display: flex; 
+    justify-content: space-between;
+    
+    
+}
+
+
+
 
 .my-image {
     flex-shrink: 0;
@@ -121,9 +125,9 @@ section {
 }
 
 .my-image img {
-    border: orange 5px solid;
+    border: #fff 5px solid;
     border-radius: 25%;
-    width: 100%;
+    width: 90%;
     
     
 }
@@ -141,48 +145,33 @@ section {
 #my-work {
     background-color: #ff914d;
     display: flex;
-    border: 5px #000 solid;
-    
-}
-
-.my-work-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     
-
 }
 
-.product-title {
-    color:#fff;
-}
-
-.large-image-box-container {
-    display: flex;
-    flex-direction: column;
-}
 
 
 /* Contact Me Section */
 #contact-me {
     background-color: #03989e;
     display: flex;
-    border: 5px #000 solid;
-    
-}
-.container-contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-   
+        
 }
 
-.container-contact h2 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    color:#fff;
+.contact-info-container h4 {
+    text-decoration: underline;
+    font-size: 18px;
+    
 }
+
+.contact-info-container a {
+    color:#fff;
+    text-decoration: none;
+    }
+
+
+
+
 
 
 
@@ -198,6 +187,7 @@ footer {
     margin: 0 auto;
     padding: 5px 40px;
     width: 100%;
+    
     
 }
 
