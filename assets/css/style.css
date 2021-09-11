@@ -33,6 +33,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     position: sticky;
+    position: -webkit-sticky;
     top: 0px;
     margin: 0 auto;
     padding: 10px 20px;
@@ -48,19 +49,24 @@ header nav ul {
 }
 
 header nav li {
-    padding-right: 40px; 
+    padding: 0 20px; 
       
    
 }
-header ul li a {
+header nav ul li a {
     text-decoration: none;
     color: var(--third-color);
     font-size: 1.85vw;
-    font-weight: 900;
-    
-          
+    font-weight: 900; 
 }
 
+header nav ul li a:hover {
+    background-color: var(--second-color);
+    border: 2px var(--third-color) dotted;
+}
+
+
+/* Hero Styling */
 .hero {
     height: 600px;
     background-image: url(../images/hero.png);
@@ -122,7 +128,13 @@ section {
     
 }
 
-
+.intro {
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 5px 2px var(--second-color);
+    
+    
+}
 
 
 .my-image {
@@ -176,20 +188,27 @@ section {
         
 }
 
-.contact-info-container h4 {
+
+.contact-info h4 {
     text-decoration: underline;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    
     
 }
 
-.contact-info-container a {
+.contact-info a {
     color:var(--third-color);
     text-decoration: none;
     font-size: 16px;
     font-weight: 300px;
-    
-    }
+ 
+   
+}
+
+.contact-info a:hover {
+    background-color: var(--second-color);
+}
 
 
 
@@ -277,10 +296,15 @@ footer h2 {
         margin: 10px auto;
     }
 
-    header nav li {
+    header nav ul li {
         margin: 0px auto;
+        
     }
-   
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
     .about-me-container {
         flex-direction: column;
     }
