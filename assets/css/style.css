@@ -1,3 +1,9 @@
+:root {
+    --first-color: #03989e;
+    --second-color: #ff914d;
+    --third-color: #fff;
+}
+
 /*Global Styles */
 * {
     padding: 0;
@@ -8,19 +14,19 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: var(--third-color);
     
     
 }
 
 .border-bottom {
-    border-bottom: 5px #fff solid;
+    border-bottom: 5px var(--third-color) solid;
 }
 
 /*Heading & Navigation Styles*/
 
 header {
-    background-color: #03989e;
+    background-color: var(--first-color);
     width: 100%;
     display:flex;
     justify-content: space-between;
@@ -48,7 +54,7 @@ header nav li {
 }
 header ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--third-color);
     font-size: 1.85vw;
     font-weight: 900;
     
@@ -66,7 +72,7 @@ header ul li a {
 /* Section Styling */
 section {
     width: 100%;   
-    background-color: #03989e;
+    background-color: var(--first-color);
     padding:20px;
     
     
@@ -76,6 +82,7 @@ section {
     flex: 1 8%;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .content-container {
@@ -89,7 +96,7 @@ section {
 }
 
 .section-title {
-    color:#fff;
+    color:var(--third-color);
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 28px;
@@ -103,11 +110,12 @@ section {
 #about-me {
     display: flex;
     justify-content: space-between;
+    background-color: var(--first-color);
     
 }
 
 .about-me-container {
-    background-color: #03989e;
+    background-color: var(--first-color);
     display: flex; 
     justify-content: space-between;
     
@@ -125,7 +133,7 @@ section {
 }
 
 .my-image img {
-    border: #fff 5px solid;
+    border: var(--third-color) 5px solid;
     border-radius: 25%;
     width: 90%;
     
@@ -135,7 +143,8 @@ section {
     flex: 4;
     padding: 20px;
     font-size: 16px;
-    color: #fff;
+    color: var(--third-color);
+    font-size: 16px;
     
 }
 
@@ -143,30 +152,50 @@ section {
 /* My Work Styles */
  
 #my-work {
-    background-color: #ff914d;
+    background-color: var(--second-color);
     display: flex;
     justify-content: space-around;
     
+}
+
+.image-box-container {
+    padding-bottom: 10px;
+}
+
+.image-box-container h3 {
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 
 
 /* Contact Me Section */
 #contact-me {
-    background-color: #03989e;
+    background-color: var(--first-color);
     display: flex;
         
 }
 
 .contact-info-container h4 {
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 20px;
+    padding-bottom: 10px;
     
 }
 
 .contact-info-container a {
-    color:#fff;
+    color:var(--third-color);
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 300px;
+    
+    }
+
+
+
+.contact-info p {
+        font-size: 16px;
+        line-height: 1.5em;   
     }
 
 
@@ -178,7 +207,7 @@ section {
 /*Footer Styles */
 
 footer {
-    background-color: #ff914d;
+    background-color: var(--second-color);
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -193,9 +222,123 @@ footer {
 
 footer h2 {
     font-size: 20px;
-    color: #fff;
+    color: var(--third-color);
     text-align: center;
 }
+
+
+
+/* Media Queries */
+
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 500px;
+        background-position: center;
+    }
+
+    #about-me, #my-work, #contact-me{
+        flex-direction: column;
+    }
+
+    
+
+    .section-title {
+        text-align: center;
+        writing-mode: inherit;
+        padding-bottom: 20px;
+        border-bottom: 5px var(--third-color) solid;
+        width: 50%;
+        
+    }
+
+    .content-container{
+        padding: 20px;
+    }
+
+
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+    
+    
+    header {
+        display: inherit;
+        
+    }
+
+    .logo {
+        display: block;
+        margin: 10px auto;
+    }
+
+    header nav li {
+        margin: 0px auto;
+    }
+   
+    .about-me-container {
+        flex-direction: column;
+    }
+
+    .my-work-container {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .large-work-image {
+        width: 400px;
+    }
+    
+    .image-box-container {
+        margin-top: 20px;
+    }
+
+    .work-image {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+   .contact-info-container {
+       display:block;
+       margin: 10px auto;
+   }
+
+   .contact-info  {
+    text-align: center;
+    padding: 10px 0;
+    }
+
+    footer {
+        display: block;
+        
+    }
+
+    footer h2 {
+        padding-top: 10px;
+    }
+
+}
+
+/* Media Query for Mobile Phones and Smaller */
+@media screen and (max-width: 575px) {
+    .my-info p, .contact-info p, .contact-info a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .contact-info h4 {
+        font-size: 22px;
+    }
+
+     
+}
+
 
 
 
